@@ -7,7 +7,8 @@
   require 'connMySQL.php';
 
   $_SESSION['clveHora'] = $_POST['clveHora'];
-  $_SESSION['hora'] = $_POST['hora'];
+  $_SESSION['horaIn'] = $_POST['horaIn'];
+  $_SESSION['horaOut'] = $_POST['horaOut'];
 
  ?>
 
@@ -37,11 +38,18 @@
                 <?php echo $_SESSION['clveHora']; ?>
               </p>
             </div>
-            <!-- Nombre Hora -->
+            <!-- Hora Entrada -->
             <div class="col-xs-4">
-              <label for="hora">Hora</label>
+              <label for="horaIn">Hora de Entrada</label>
               <p>
-                <?php echo $_SESSION['hora']; ?>
+                <?php echo $_SESSION['horaIn']; ?>
+              </p>
+            </div>
+            <!-- Hora Salida -->
+            <div class="col-xs-4">
+              <label for="horaOut">Hora de Salida</label>
+              <p>
+                <?php echo $_SESSION['horaOut']; ?>
               </p>
             </div>
           </div>

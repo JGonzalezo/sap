@@ -19,10 +19,15 @@
               <!--Efecto mediante bootstrap.css de la clase form-control -->
               <input type="text" id="clveCar" class="form-control" name="clveHora" required>
             </div>
-            <!-- Nombre Hora -->
-            <div class="col-xs-4">
-              <label for="hora">Hora</label>
-              <input type="text" id="hora" class="form-control" name="hora" required>
+            <!-- Hora de Entrada -->
+            <div class="col-xs-3">
+              <label for="horaIn">Hora de entrada</label>
+              <input type="text" id="horaIn" class="form-control" name="horaIn" required placeholder="8:00">
+            </div>
+            <!-- Hora de Salida -->
+            <div class="col-xs-3">
+              <label for="horaOut">Hora de Salida</label>
+              <input type="text" id="horaOut" class="form-control" name="horaOut" placeholder="12:00" required>
             </div>
           </div>
         </span>

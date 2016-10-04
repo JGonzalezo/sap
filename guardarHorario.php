@@ -13,10 +13,11 @@
   require 'connMySQL.php';
 
   $clveHora = $_SESSION['clveHora'];
-  $hora = $_SESSION['hora'];
+  $horaIn = $_SESSION['horaIn'];
+  $horaOut = $_SESSION['horaOut'];
 
-  $sql = "INSERT INTO horario(clve_hora, hora)
-  VALUES('$clveHora', '$hora')";
+  $sql = "INSERT INTO horario(clve_hora, hora_in, hora_out)
+  VALUES('$clveHora', '$horaIn', '$horaOut')";
 
   // Verificar si el query fue exitoso
   if ($conn->query($sql) === TRUE){
